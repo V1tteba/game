@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIRDS</title>
     <link rel="stylesheet" href="secret.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <audio preload="auto" autoplay="true" loop="true"; hidden="true";>
@@ -13,7 +16,13 @@
     <div class="scene">
         <div class="scale">
             <img src="game/imagens/janela.png" alt="">
-
+            <div class="hotspot" id="windo"></div>
+            <div id="custom-alert" class="alert-overlay">
+    <div class="alert-box">
+        <p id="alert-message">I cant leave, im too weak</p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+</div>
             <a href="secret.html" class="hotspot" id="voltar"><img src="game/imagens/seta.png" alt=""></a>
         </div>
     </div>

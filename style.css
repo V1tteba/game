@@ -1,8 +1,9 @@
-/* Base improvements */
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -14,7 +15,6 @@ body {
     position: relative;
 }
 
-/* Make fixed modal adapt better */
 .pergunta {
     position: fixed;
     top: 50%;
@@ -28,7 +28,7 @@ body {
     text-align: center;
 
     background-color: rgb(22, 22, 22);
-    padding: 3rem; /* removido padding duplicado */
+    padding: 3rem;
     border-radius: 1rem;
 
     width: 90%;
@@ -44,7 +44,6 @@ body {
     gap: 1rem;
 }
 
-/* Buttons more touch-friendly */
 .pergunta a {
     text-decoration: none;
     color: #c9c9c9;
@@ -66,11 +65,9 @@ body {
     display: flex;
     gap: 1rem;
 }
-
-/* -------- MOBILE -------- */
 @media (max-width: 768px) {
     body {
-        display: flex; /* necessário */
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -92,7 +89,6 @@ body {
     }
 }
 
-/* -------- VERY SMALL SCREENS -------- */
 @media (max-width: 480px) {
     .pergunta {
         padding: 1rem;
